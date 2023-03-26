@@ -2818,6 +2818,7 @@ blockquote {
 
 .vcentered .row {
   width: 100%;
+  text-align: justify;
 }
 
 .title-block {
