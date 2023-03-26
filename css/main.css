@@ -101,8 +101,9 @@ h6 {
 }
 
 a {
-  color: #0099cc;
-  text-decoration: none;
+  color: #9ca8b8;
+  text-decoration: underline;
+  font-weight: bold;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
