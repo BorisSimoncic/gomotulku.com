@@ -140,7 +140,7 @@ p {
   min-height: 80vh;
   margin: 10vh auto;
   padding: 0;
-  background-color: #0f1827;
+  background-color: #111b2b;
   -webkit-box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
   -moz-box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
   box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
@@ -566,7 +566,7 @@ input[type="submit"]:focus {
 }
 
 .section-content {
-  background-color: #263044;
+  background-color: #212c3f;
   padding: 60px;
   position: relative;
   height: auto;
