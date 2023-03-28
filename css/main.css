@@ -1302,14 +1302,10 @@ textarea.form-control, textarea.form-control:focus {
   position: relative;
   display: inline-block;
   background-color: #222;
-  border: 1px solid #131e2f;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 10px;
+  height: 1px;
   margin-bottom: 8px;
   width: 100%;
 }
@@ -1331,17 +1327,13 @@ textarea.form-control, textarea.form-control:focus {
 
 .skills-second-style .skill-percentage {
   background-color: #131e2f;
-  border: 2px solid #222;
-  -moz-border-radius: 9px;
-  -webkit-border-radius: 9px;
-  border-radius: 9px;
-  height: 8px;
+  height: 5px;
   padding: 0;
 }
 
 /* --- Skills Values --- */
 .skills-second-style .skill-container.skill-1 .skill-percentage {
-  width: 95%;
+  width: 100%;
 }
 
 .skills-second-style .skill-container.skill-2 .skill-percentage {
@@ -1357,7 +1349,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-  width: 95%;
+  width: 100%;
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
