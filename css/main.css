@@ -102,7 +102,7 @@ h6 {
 
 a {
   color: #8ea9cd;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -2820,6 +2820,11 @@ blockquote {
 .vcentered .row {
   width: 100%;
   text-align: justify;
+}
+
+.row {
+  text-align: justify;
+  margin: 0px;
 }
 
 .title-block {
