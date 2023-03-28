@@ -977,8 +977,8 @@ textarea.form-control, textarea.form-control:focus {
 .info-block-w-icon i {
   position: relative;
   font-size: 42px;
-  color: #131e2f;
-  opacity: .7;
+  color: #ca972f;
+  opacity: 1;
 }
 /* --- End Info block with Icon --- */
 
@@ -1424,10 +1424,9 @@ textarea.form-control, textarea.form-control:focus {
 
 .certi-logo {
   display: table-cell;
-  width: 120px;
+  width: 150px;
   height: 100%;
   background-color: #444;
-  padding: 25px;
   vertical-align: middle;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -1456,7 +1455,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .certi-date {
-  font-size: .7em;
+  font-size: .9em;
   color: #777;
   opacity: .7;
 }
@@ -2925,6 +2924,10 @@ blockquote {
 
 .fun-fact-block-text {
   display: block;
+}
+
+#icon45deg {
+ transform: rotate(-45deg)!important;
 }
 
 @media only screen and (max-width: 1024px) {
