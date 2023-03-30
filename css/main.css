@@ -857,6 +857,7 @@ textarea.form-control, textarea.form-control:focus {
   left: 0;
   z-index: 1;
   font-size: 13px;
+  opacity: 0;
 }
 
 .form-control, .form-control:focus, .has-error .form-control, .has-error .form-control:focus, input[type="search"], input[type="password"], input[type="text"], .header-search input.form-control {
