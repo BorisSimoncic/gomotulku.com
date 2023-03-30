@@ -727,7 +727,7 @@ textarea.form-control, textarea.form-control:focus {
   top: 0;
   opacity: 0;
   background: transparent;
-  border: 2px solid #131e2f;
+  border: 2px solid #999;
   border-right-width: 0;
   height: 100%;
   -webkit-transition: all 0.3s ease-in-out;
@@ -747,7 +747,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .has-error .form-control ~ .form-control-border {
-  border-color: #ff4c4c;
+  border-color: #7e1b1b;
 }
 
 /* Placeholders */
@@ -772,7 +772,7 @@ textarea.form-control, textarea.form-control:focus {
   line-height: 1.75em;
   margin: -2px 0 0 10px;
   color: #fff;
-  background: #ff4e4e;
+  background: #7e1b1b;
 }
 
 .form-group .help-block:after {
@@ -782,7 +782,7 @@ textarea.form-control, textarea.form-control:focus {
   bottom: 100%;
   width: 0;
   height: 0;
-  border-bottom: 10px solid #ff4e4e;
+  border-bottom: 10px solid #7e1b1b;
   border-right: 10px solid transparent;
 }
 .form-group .help-block:empty {
@@ -852,7 +852,7 @@ textarea.form-control, textarea.form-control:focus {
 
 .form-group .form-control:focus ~ label,
 .form-group.form-group-focus .form-control ~ label {
-  color: #131e2f;
+  color: #999;
   top: -20px;
   left: 0;
   z-index: 1;
@@ -2945,8 +2945,6 @@ blockquote {
   .title-block .sp-subtitle {
     font-size: 18px;
   }
-
-
 
 }
 
