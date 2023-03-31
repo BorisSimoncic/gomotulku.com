@@ -304,13 +304,15 @@
             },
         });
 
-        //Google Maps
-        $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
-        });
-        $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
-        });
+        document.getElementById('openButton').onclick = function() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('calendarModal').showModal();
+        };
+
+        document.getElementById('closeButton').onclick = function() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('calendarModal').close();
+        };
     });
 
 })(jQuery);

@@ -58,8 +58,8 @@ html {
 
 body {
   background-color: #131e2f;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9d2bf3), to(#131e2f));
-  background: linear-gradient(#9d2bf3, #131e2f);
+  background: -webkit-gradient(linear, left top, left bottom, from(#131e2f), to(#131e2f));
+  background: linear-gradient(#131e2f, #131e2f);
   margin: 0;
   width: 100%;
   height: 100%;
@@ -2947,6 +2947,21 @@ blockquote {
 
   .title-block .sp-subtitle {
     font-size: 18px;
+  }
+
+  dialog[open] {
+    width: 60%!important; /* Adjust the width as needed */
+    height: 80%; /* Adjust the height as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  /* Optional: Center the dialog on the screen */
+  dialog::backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 }
