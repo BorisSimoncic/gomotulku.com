@@ -641,6 +641,7 @@ input[type="submit"]:focus {
 .page-title {
   display: inline-block;
   position: relative;
+  padding-left: 15px;
   padding-right: 25px;
   padding-bottom: 15px;
   margin-bottom: 30px;
