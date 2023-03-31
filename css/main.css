@@ -1852,7 +1852,7 @@ textarea.form-control, textarea.form-control:focus {
 .ajax-page-content {
   height: 100%;
   overflow: auto;
-  background-color: #222;
+  background-color: #212c3f;
 }
 
 .ajax-page-wrapper {
@@ -1921,7 +1921,7 @@ textarea.form-control, textarea.form-control:focus {
   display: block;
   position: relative;
   padding: 20px 25px 25px;
-  background-color: #333;
+  background-color: #131e2f;
 }
 
 .ajax-page-wrapper .block-title h3 {
@@ -2950,20 +2950,20 @@ blockquote {
     font-size: 18px;
   }
 
-  dialog[open] {
-    width: 60%!important; /* Adjust the width as needed */
-    height: 80%; /* Adjust the height as needed */
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: white;
-  }
+  /*dialog[open] {*/
+  /*  width: 60%!important; !* Adjust the width as needed *!*/
+  /*  height: 80%; !* Adjust the height as needed *!*/
+  /*  padding: 20px;*/
+  /*  box-sizing: border-box;*/
+  /*  background-color: white;*/
+  /*}*/
 
-  /* Optional: Center the dialog on the screen */
-  dialog::backdrop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  /*!* Optional: Center the dialog on the screen *!*/
+  /*dialog::backdrop {*/
+  /*  display: flex;*/
+  /*  align-items: center;*/
+  /*  justify-content: center;*/
+  /*}*/
 
 }
 
