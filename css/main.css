@@ -2949,21 +2949,5 @@ blockquote {
   .title-block .sp-subtitle {
     font-size: 18px;
   }
-
-  /*dialog[open] {*/
-  /*  width: 60%!important; !* Adjust the width as needed *!*/
-  /*  height: 80%; !* Adjust the height as needed *!*/
-  /*  padding: 20px;*/
-  /*  box-sizing: border-box;*/
-  /*  background-color: white;*/
-  /*}*/
-
-  /*!* Optional: Center the dialog on the screen *!*/
-  /*dialog::backdrop {*/
-  /*  display: flex;*/
-  /*  align-items: center;*/
-  /*  justify-content: center;*/
-  /*}*/
-
 }
 

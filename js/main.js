@@ -303,27 +303,6 @@
                 }
             },
         });
-
-        // function openDialog() {
-        //     const overlay = document.getElementById('overlay');
-        //     overlay.style.display = 'block';
-        //     setTimeout(() => {
-        //         overlay.style.opacity = '1';
-        //     }, 50);
-        //     document.getElementById('calendarModal').showModal();
-        // }
-        //
-        // function closeDialog() {
-        //     const overlay = document.getElementById('overlay');
-        //     overlay.style.opacity = '0';
-        //     setTimeout(() => {
-        //         overlay.style.display = 'none';
-        //     }, 300);
-        //     document.getElementById('calendarModal').close();
-        // }
-        //
-        // document.getElementById('openButton').onclick = openDialog;
-        // document.getElementById('closeButton').onclick = closeDialog;
     });
 
 })(jQuery);
