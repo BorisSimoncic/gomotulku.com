@@ -1960,8 +1960,6 @@ textarea.form-control, textarea.form-control:focus {
   width: 28px;
   height: 28px;
   color: #b5b5b5;
-  background-color: #222;
-  border: 1px solid #222;
   text-align: center;
   border-radius: 0;
 }
