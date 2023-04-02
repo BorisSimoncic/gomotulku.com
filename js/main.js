@@ -185,6 +185,19 @@
             animateIn: 'animated-section-scaleUp'
         });
 
+        $('.text-rotation2').owlCarousel({
+            loop: true,
+            dots: false,
+            nav: false,
+            margin: 0,
+            items: 2,
+            autoplay: true,
+            autoplayHoverPause: false,
+            autoplayTimeout: 3800,
+            animateOut: 'animated-section-scaleDown',
+            animateIn: 'animated-section-scaleUp'
+        });
+
         // Testimonials Slider
         $(".testimonials.owl-carousel").owlCarousel({
             nav: true, // Show next/prev buttons.
@@ -303,6 +316,21 @@
                 }
             },
         });
+
+// get all the read more buttons and text elements
+        const readMoreBtns = document.querySelectorAll('.read-more');
+        const textElems = document.querySelectorAll('.text');
+
+// add click event listener to each read more button
+        readMoreBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                // toggle the 'expanded' class on the text element for the current testimonial
+                textElems[index].classList.toggle('expanded');
+                // update the text of the read more button based on whether the text is expanded or not
+                btn.textContent = textElems[index].classList.contains('expanded') ? 'Read less' : 'Read more';
+            });
+        });
+
     });
 
 })(jQuery);
