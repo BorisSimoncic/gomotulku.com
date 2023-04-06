@@ -1034,6 +1034,11 @@ textarea.form-control, textarea.form-control:focus {
 }
 /* --- End of Info Block with Borders --- */
 
+.testimonial-fun-fact {
+  text-align: center;
+  margin: 15px 2px 10px;
+  padding: 0 10px 10px 10px;
+}
 
 /* --- Testimonials --- */
 .testimonial {
@@ -2962,10 +2967,6 @@ blockquote {
 
 .fun-fact-block-text {
   display: block;
-}
-
-#icon45deg {
- transform: rotate(-45deg)!important;
 }
 
 @media only screen and (max-width: 1024px) {

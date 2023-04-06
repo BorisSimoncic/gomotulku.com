@@ -198,6 +198,20 @@
             animateIn: 'animated-section-scaleUp'
         });
 
+        $('.text-rotation-funfacts').owlCarousel({
+            loop: true,
+            dots: false,
+            nav: true,
+            navText: false,
+            margin: 0,
+            items: 3,
+            autoplay: false,
+            autoplayHoverPause: false,
+            autoplayTimeout: 3800,
+            animateOut: 'animated-section-scaleDown',
+            animateIn: 'animated-section-scaleUp'
+        });
+
         // Testimonials Slider
         $(".testimonials.owl-carousel").owlCarousel({
             nav: true, // Show next/prev buttons.
