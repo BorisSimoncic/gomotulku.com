@@ -1419,7 +1419,6 @@ textarea.form-control, textarea.form-control:focus {
   width: 100%;
   border: 2px solid #444;
   border-radius: 8px;
-  margin-bottom: 20px;
   -webkit-transition: all 2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
