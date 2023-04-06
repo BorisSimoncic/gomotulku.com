@@ -1411,6 +1411,43 @@ textarea.form-control, textarea.form-control:focus {
 /* --- End of Knowledges --- */
 
 /* --- Certificates --- */
+.service-item {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  table-layout: fixed;
+  width: 100%;
+  border: 2px solid #444;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.service-logo {
+  flex-shrink: 0;
+  position: relative;
+  width: 30%; /* Adjust this value based on the desired width of the image */
+  height: 120px; /* Set the height of the parent container */
+  overflow: hidden;
+}
+
+.service-content {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-logo img {
+  height: 100%;
+  object-fit: cover;
+  width: auto;
+}
+
 .certificate-item {
   position: relative;
   display: table;
