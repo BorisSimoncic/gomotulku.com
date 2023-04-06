@@ -186,7 +186,7 @@
         });
 
         $('.text-rotation2').owlCarousel({
-            loop: true,
+            loop: false,
             dots: false,
             nav: false,
             margin: 0,

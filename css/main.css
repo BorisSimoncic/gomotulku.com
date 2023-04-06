@@ -2956,7 +2956,7 @@ blockquote {
     display: block;
   }*/
 
-  .text p {
+  .text-5lines p {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 5; /* show only 5 lines */
