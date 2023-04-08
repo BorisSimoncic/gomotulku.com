@@ -2997,6 +2997,10 @@ blockquote {
   -webkit-line-clamp: initial;
 }
 
+#funfacts .owl-nav {
+  padding-right: 15px;
+}
+
 @media only screen and (max-width: 1024px) {
  .lm-animated-bg {
     display: none;
