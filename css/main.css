@@ -1062,10 +1062,13 @@ textarea.form-control, textarea.form-control:focus {
   font-style: italic;
 }
 
+.testimonial .author-info-button {
+  display: flex; justify-content: space-between; align-items: center; margin-top: 23px;
+}
+
 .testimonial .author-info {
   position: relative;
   text-align: left;
-  margin-top: 20px;
 }
 
 .testimonial .author-info .icon {
@@ -2969,6 +2972,31 @@ blockquote {
   display: block;
 }
 
+/*.text .full {
+  display: none!important;
+}
+
+.text .show {
+  display: block;
+}*/
+
+.text-5lines {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* show only 5 lines */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.read-more {
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.text-expanded {
+  -webkit-line-clamp: initial;
+}
+
 @media only screen and (max-width: 1024px) {
  .lm-animated-bg {
     display: none;
@@ -2983,32 +3011,6 @@ blockquote {
 
   .title-block .sp-subtitle {
     font-size: 18px;
-  }
-
-  /*.text .full {
-    display: none!important;
-  }
-
-  .text .show {
-    display: block;
-  }*/
-
-  .text-5lines p {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5; /* show only 5 lines */
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-  }
-
-  .read-more {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-  }
-
-  .text.expanded p {
-    -webkit-line-clamp: initial; /* show all lines */
   }
 }
 

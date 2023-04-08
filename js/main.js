@@ -186,7 +186,7 @@
         });
 
         $('.text-rotation2').owlCarousel({
-            loop: false,
+            loop: true,
             dots: false,
             nav: false,
             margin: 0,
@@ -332,16 +332,16 @@
         });
 
 // get all the read more buttons and text elements
-        const readMoreBtns = document.querySelectorAll('.read-more');
-        const textElems = document.querySelectorAll('.text');
+        const readMoreBtns = document.querySelectorAll('.author-info-button .read-more');
+        const textElems = document.querySelectorAll('.text .text-5lines');
 
 // add click event listener to each read more button
         readMoreBtns.forEach((btn, index) => {
             btn.addEventListener('click', () => {
                 // toggle the 'expanded' class on the text element for the current testimonial
-                textElems[index].classList.toggle('expanded');
+                textElems[index].classList.toggle('text-expanded');
                 // update the text of the read more button based on whether the text is expanded or not
-                btn.textContent = textElems[index].classList.contains('expanded') ? 'Read less' : 'Read more';
+                btn.textContent = textElems[index].classList.contains('text-expanded') ? 'Less' : 'More';
             });
         });
 
