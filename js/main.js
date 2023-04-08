@@ -192,7 +192,7 @@
             margin: 0,
             items: 2,
             autoplay: true,
-            autoplayHoverPause: false,
+            autoplayHoverPause: true,
             autoplayTimeout: 3800,
             animateOut: 'animated-section-scaleDown',
             animateIn: 'animated-section-scaleUp'
