@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="https://kit.fontawesome.com/839bee8405.js" crossorigin="anonymous"></script>
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -1018,50 +1019,45 @@
                                 <!-- Contact Form -->
                                 <div class="col-xs-12 col-sm-8">
 
-                                    <form id="contact_form" class="contact-form" action="contact_form/contact_form.php"
-                                          method="post">
-
+                                    <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
                                         <div class="messages"></div>
-
                                         <div class="controls">
                                             <div class="fields clearfix">
                                                 <div class="form-group form-group-with-icon">
-                                                    <input id="form_name" type="text" name="name"
-                                                           class="form-control" placeholder="" required="required"
-                                                           data-error="Name is required.">
+                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
                                                     <label>Full Name</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
 
                                                 <div class="form-group form-group-with-icon">
-                                                    <input id="form_email" type="email" name="email"
-                                                           class="form-control" placeholder="" required="required"
-                                                           data-error="Valid email is required.">
+                                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
                                                     <label>Email Address</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
 
                                                 <div class="form-group form-group-with-icon">
-                                                        <textarea id="form_message" name="message" class="form-control"
-                                                                  placeholder="" rows="8" required="required"
-                                                                  style="resize:none"
-                                                                  data-error="Please, leave me a message."></textarea>
+                                                    <textarea id="form_message" name="message" class="form-control" placeholder="" rows="8" required="required" style="resize:none" data-error="Please, leave me a message."></textarea>
                                                     <label>Message</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
 
-                                                <div class="g-recaptcha"
-                                                     data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
-
-                                                <input type="submit" class="button btn-send" value="Send message">
+                                                <button class="g-recaptcha button btn-send"
+                                                        data-sitekey="6LcLwXIlAAAAABlmf1D2DSyeBqg-b0jEzCjwz6Zs"
+                                                        data-callback="onSubmit"
+                                                        data-theme="dark"
+                                                        data-action="submit">Send message</button>
                                             </div>
                                         </div>
-
                                     </form>
                                 </div>
+                                <script>
+                                    function onSubmit(token) {
+                                        document.getElementById('contact_form').submit();
+                                    }
+                                </script>
                             </div>
                             <!-- End of Contact Form -->
                         </div>
@@ -1079,7 +1075,6 @@
 <script src="js/animating.js"></script>
 
 <script src="js/imagesloaded.pkgd.min.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <script src='js/perfect-scrollbar.min.js'></script>
 <script src='js/jquery.shuffle.min.js'></script>
