@@ -193,9 +193,10 @@
             items: 2,
             autoplay: true,
             autoplayHoverPause: true,
-            autoplayTimeout: 3800,
+            autoplayTimeout: 8000,
             animateOut: 'animated-section-scaleDown',
-            animateIn: 'animated-section-scaleUp'
+            animateIn: 'animated-section-scaleUp',
+            smartSpeed: 2500
         });
 
         $('.text-rotation-funfacts').owlCarousel({
@@ -209,7 +210,8 @@
             autoplayHoverPause: false,
             autoplayTimeout: 3800,
             animateOut: 'animated-section-scaleDown',
-            animateIn: 'animated-section-scaleUp'
+            animateIn: 'animated-section-scaleUp',
+            smartSpeed: 1000
         });
 
         $('.text-rotation-featuredon').owlCarousel({
