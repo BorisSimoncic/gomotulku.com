@@ -219,7 +219,7 @@
             navText: false,
             margin: 0,
             items: 5,
-            autoplay: false,
+            autoplay: true,
             autoplayHoverPause: false,
             autoplayTimeout: 1800,
             animateOut: 'animated-section-scaleDown',
