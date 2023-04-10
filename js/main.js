@@ -386,7 +386,7 @@
 
         var menuProfileImg = document.getElementById('menuProfileImg');
         var originalSrc = menuProfileImg.src;
-        var hoverSrc = 'icons/folder_gold.png'; // Replace with the URL of the new image
+        var hoverSrc = 'icons/cv_0_gold.png'; // Replace with the URL of the new image
 
         menuProfileImg.addEventListener('mouseover', function() {
             menuProfileImg.src = hoverSrc;
