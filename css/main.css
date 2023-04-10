@@ -1040,6 +1040,13 @@ textarea.form-control, textarea.form-control:focus {
   padding: 0 10px 10px 10px;
 }
 
+.testimonial-featuredon {
+  text-align: center;
+  margin: 15px 2px 10px;
+  padding: 0 10px 10px 10px;
+  width: 120px;
+}
+
 /* --- Testimonials --- */
 .testimonial {
   text-align: center;
