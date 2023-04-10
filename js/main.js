@@ -221,9 +221,10 @@
             items: 5,
             autoplay: true,
             autoplayHoverPause: false,
-            autoplayTimeout: 1800,
+            autoplayTimeout: 3500,
             animateOut: 'animated-section-scaleDown',
-            animateIn: 'animated-section-scaleUp'
+            animateIn: 'animated-section-scaleUp',
+            smartSpeed: 3000
         });
 
         // Testimonials Slider
