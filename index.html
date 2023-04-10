@@ -111,7 +111,7 @@
             </div>
 
             <div class="header-buttons">
-                <a href="https://isavedalife.charity" target="_blank" class="btn btn-primary"
+                <a id="get-updates-btn" class="btn btn-primary"
                    style="text-decoration: none;">Get Updates</a>
             </div>
 
@@ -1122,5 +1122,48 @@
 
 <script src="js/validator.js"></script>
 <script src="js/main.js"></script>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="white-space-40"></div>
+        <p>Subscribe to my newsletter about my activities and for regular updates of content on developing a quality mindset.</p>
+        <div class="white-space-10"></div>
+        <div>
+        <form id="getupdates_form" class="contact-form" action="contact_form/contact_form.php" method="post">
+            <div class="messages"></div>
+            <div class="controls">
+                <div class="fields clearfix">
+                    <div class="form-group form-group-with-icon">
+                        <input id="form_first_name" type="text" name="first_name" class="form-control" placeholder="" required="required" data-error="First name is required.">
+                        <label>First Name</label>
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group form-group-with-icon">
+                        <input id="form_last_name" type="text" name="last_name" class="form-control" placeholder="" required="required" data-error="Last name is required.">
+                        <label>Last Name</label>
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group form-group-with-icon">
+                        <input id="form_email1" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                        <label>Email Address</label>
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <button class="g-recaptcha button btn-send"
+                            data-sitekey="6LcLwXIlAAAAABlmf1D2DSyeBqg-b0jEzCjwz6Zs"
+                            data-callback="onSubmit"
+                            data-theme="dark"
+                            data-action="submit">Subscribe</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

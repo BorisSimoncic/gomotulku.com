@@ -362,6 +362,29 @@
             });
         });
 
+        document.getElementById('get-updates-btn').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action of the anchor tag
+            var modal = document.getElementById('modal');
+            modal.style.display = 'block';
+        });
+
+// Get the modal and the close button element
+        var modal = document.getElementById('modal');
+        var closeButton = document.querySelector('.close');
+
+// When the user clicks the close button, close the modal
+        closeButton.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+// When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+
     });
 
 })(jQuery);
