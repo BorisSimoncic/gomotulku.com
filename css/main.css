@@ -3049,6 +3049,14 @@ blockquote {
   cursor: pointer;
 }
 
+.custom-icon-list li {
+  list-style-type: none;
+}
+
+.custom-icon-list li .fas {
+  margin-right: 10px; /* Adjust the margin to add space between the icon and the text */
+}
+
 @media only screen and (max-width: 1024px) {
  .lm-animated-bg {
     display: none;
