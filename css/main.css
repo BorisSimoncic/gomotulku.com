@@ -1200,7 +1200,7 @@ textarea.form-control, textarea.form-control:focus {
   display: table;
   table-layout: fixed;
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .timeline-second-style .timeline-item:last-child {
@@ -1271,6 +1271,11 @@ textarea.form-control, textarea.form-control:focus {
 .timeline-second-style .item-title {
   font-size: 16px;
   margin-bottom: 3px;
+}
+
+.timeline-second-style .item-title-ul {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .timeline-second-style .item-period {
@@ -3049,12 +3054,22 @@ blockquote {
   cursor: pointer;
 }
 
-.custom-icon-list li {
-  list-style-type: none;
+.custom-icon-list {
+  margin-left: 0px;
+  margin-top: 5px;
 }
 
-.custom-icon-list li .fas {
-  margin-right: 10px; /* Adjust the margin to add space between the icon and the text */
+.dash-bullet {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 15px;
+}
+
+.dash-bullet:before {
+  content: '-';
+  position: absolute;
+  left: 0;
 }
 
 @media only screen and (max-width: 1024px) {
