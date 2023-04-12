@@ -3030,7 +3030,7 @@ blockquote {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('/img/subscribe1.png'); /* Replace with the correct path to your image */
+  background-image: url('img/subscribe1.png'); /* Replace with the correct path to your image */
   background-size: contain ; /* This will scale the image to cover the entire element */
   background-position: center; /* This will center the image within the element */
   background-repeat: no-repeat; /* This will prevent the image from repeating */
