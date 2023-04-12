@@ -493,8 +493,8 @@ var PageTransitions = (function ($, options) {
 
                 $nextPage.scrollTop(0);
 
-                inClass = 'animated-section-rotateCubeBottomIn';
-                outClass = 'animated-section-rotateCubeBottomOut animated-section-ontop';
+                //inClass = 'animated-section-rotateCubeBottomIn';
+                //outClass = 'animated-section-rotateCubeBottomOut animated-section-ontop';
 
                 $currentPage.addClass(outClass).on(animEndEventName, function() {
                     $currentPage.off(animEndEventName);
