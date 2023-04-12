@@ -187,7 +187,7 @@ var PageTransitions = (function ($, options) {
             selectedAnimNumber = parseInt(animation);
         }
 
-        selectedAnimNumber = 58;
+        selectedAnimNumber = 61;
 
         // Checking if the animation number is out of bound, max allowed value is 1 to 67.
         if (selectedAnimNumber > 67) {
@@ -492,6 +492,9 @@ var PageTransitions = (function ($, options) {
                 var $nextPage = $('section[data-id='+currentPageId+']').addClass('section-active');
 
                 $nextPage.scrollTop(0);
+
+                inClass = 'animated-section-rotateCubeBottomIn';
+                outClass = 'animated-section-rotateCubeBottomOut animated-section-ontop';
 
                 $currentPage.addClass(outClass).on(animEndEventName, function() {
                     $currentPage.off(animEndEventName);
