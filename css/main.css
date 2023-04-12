@@ -3030,13 +3030,34 @@ blockquote {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(33, 44, 63);
-  padding: 20px;
+  background-image: url('/img/subscribe1.png'); /* Replace with the correct path to your image */
+  background-size: contain ; /* This will scale the image to cover the entire element */
+  background-position: center; /* This will center the image within the element */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
   width: 80%;
-  max-width: 600px;
-  height: 42%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
+  min-width: 1100px;
+  max-width: 1100px;
+  height: auto; /* changed to auto */
+  min-height: 42%; /* added min-height */
+  overflow-y: auto; /* added to handle content overflow */
+  max-height: 90vh; /* added to prevent the modal from overflowing the screen height */
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.modal h4 {
+  color: #222222;
+  padding-bottom: 5px;
+}
+
+.modal p {
+  color: gray;
+}
+
+.subscribe-disclaimer {
+  font-size: 10px;
+  line-height: normal;
+  margin-top: -5px;
 }
 
 .close {
@@ -3045,6 +3066,7 @@ blockquote {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  margin-right: 108px;
 }
 
 .close:hover,
