@@ -3030,19 +3030,19 @@ blockquote {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('https://borissimoncic.github.io/gomotulku-v2/img/subscribe1.png'); /* Replace with the correct path to your image */
+  background-image: url('../img/subscribe.png'); /* Replace with the correct path to your image */
   background-size: contain ; /* This will scale the image to cover the entire element */
   background-position: center; /* This will center the image within the element */
   background-repeat: no-repeat; /* This will prevent the image from repeating */
   width: 80%;
-  min-width: 1100px;
-  max-width: 1100px;
+  min-width: 1000px;
+  max-width: 1000px;
   height: auto; /* changed to auto */
-  min-height: 42%; /* added min-height */
+  min-height: 450px; /* added min-height */
   overflow-y: auto; /* added to handle content overflow */
   max-height: 90vh; /* added to prevent the modal from overflowing the screen height */
-  padding-left: 50px;
-  padding-top: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
 .modal h4 {
@@ -3055,23 +3055,34 @@ blockquote {
 }
 
 .subscribe-disclaimer {
+  display: flex;
+  justify-content: space-between;
   font-size: 10px;
   line-height: normal;
-  margin-top: -5px;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.right-text {
+  text-align: right;
+  color: #e0e9f8!important;
+  margin-right: 82px;
 }
 
 .close {
-  color: #aaa;
+  color: #e0e9f8;
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 108px;
+  margin-right: 82px;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #97b4d7;
   text-decoration: none;
   cursor: pointer;
 }
