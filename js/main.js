@@ -220,13 +220,29 @@
             nav: false,
             navText: false,
             margin: 0,
-            items: 5,
             autoplay: true,
             autoplayHoverPause: false,
             autoplayTimeout: 3500,
             animateOut: 'animated-section-scaleDown',
             animateIn: 'animated-section-scaleUp',
-            smartSpeed: 3000
+            smartSpeed: 3000,
+            responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items: 2,
+                },
+                // breakpoint from 480 up
+                480 : {
+                    items: 2,
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 3,
+                },
+                1200 : {
+                    items: 5,
+                }
+            }
         });
 
         // Testimonials Slider
