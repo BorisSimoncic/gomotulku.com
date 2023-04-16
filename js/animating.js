@@ -213,7 +213,7 @@ var PageTransitions = (function ($, options) {
                 var currentPageOrder = getOrderBasedOnHref('#' + tempPageIndex);
                 var nextPageOrder = getOrderBasedOnHref('#' + gotoPage);
 
-                if (nextPageOrder > currentPageOrder) {
+                if (nextPageOrder < currentPageOrder) {
                     inClass = 'animated-section-rotateCubeBottomIn';
                     outClass = 'animated-section-rotateCubeBottomOut animated-section-ontop';
                 }
