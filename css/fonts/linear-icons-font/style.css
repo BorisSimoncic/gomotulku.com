@@ -534,3 +534,6 @@
 .lnr-pointer-left:before {
 	content: "\e8a9";
 }
+.lnr-cv:before {
+	content: "\e8aa";
+}
