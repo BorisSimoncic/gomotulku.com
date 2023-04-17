@@ -47,6 +47,7 @@ var PageTransitions = (function ($, options) {
                 return false;
             }
             var pageTrigger = $(this);
+            $('ul.main-menu a').blur(); // Remove focus and thus gold color
 
             activeMenuItem( pageTrigger );
 

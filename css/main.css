@@ -338,7 +338,6 @@ input[type="submit"]:focus {
   }
 
   ul.main-menu a.active,
-  ul.main-menu a:focus,
   ul.main-menu a:hover {
     color: #ca972f;
   }
@@ -408,7 +407,7 @@ input[type="submit"]:focus {
 }
 
 .lmpixels-arrows-nav div:hover {
-  color: #131e2f;
+  color: #ca972f;
 }
 /* --- End LMPixels Arrow Nav --- */
 
