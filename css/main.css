@@ -2856,7 +2856,7 @@ blockquote {
   -ms-flex-pack: center;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
+  /*height: 100%;*/
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
