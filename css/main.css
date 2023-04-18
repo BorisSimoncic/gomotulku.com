@@ -954,6 +954,10 @@ textarea.form-control, textarea.form-control:focus {
   padding-bottom: 50px;
 }
 
+.white-space-50-30 {
+  padding-bottom: 50px;
+}
+
 .white-space-60 {
   padding-bottom: 60px;
 }
@@ -2585,8 +2589,11 @@ blockquote {
   }
 
   .section-content {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 40px;
+  }
+
+  .white-space-50-30 {
+    padding-bottom: 30px;
   }
 
   .info-list {
