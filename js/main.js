@@ -37,7 +37,13 @@
         var windowWidth = $(window).width(),
             siteHeader = $('#site_header');
 
-        if (windowWidth < 1025) {
+        siteHeader.addClass('mobile-menu-hide');
+        $('.menu-toggle').removeClass('open');
+        setTimeout(function(){
+            siteHeader.addClass('animate');
+        }, 500);
+
+        /*if (windowWidth < 1025) {
             siteHeader.addClass('mobile-menu-hide');
             $('.menu-toggle').removeClass('open');
             setTimeout(function(){
@@ -45,7 +51,7 @@
             }, 500);
         } else {
             siteHeader.removeClass('animate');
-        }
+        }*/
     }
     // /Hide Mobile menu
 
