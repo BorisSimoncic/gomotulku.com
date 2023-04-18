@@ -55,6 +55,19 @@
   }
 }
 
+.welcome-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .welcome-desktop {
+    display: none;
+  }
+  .welcome-mobile {
+    display: inline;
+  }
+}
+
 /* ------------------------------------------------------------
 2. General Styles
 ------------------------------------------------------------ */
