@@ -46,6 +46,13 @@
   transition-property: opacity;
   transition-duration: 1000ms;
   filter: brightness(80%);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .video {
+    display: block;
+  }
 }
 
 /* ------------------------------------------------------------
