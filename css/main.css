@@ -2588,6 +2588,13 @@ blockquote {
     width: 50%;
   }
 
+  .page-title h2 {
+    position: relative;
+    font-size: 27px;
+    z-index: 1;
+    line-height: 35px;
+  }
+
   .section-content {
     padding: 40px;
   }
