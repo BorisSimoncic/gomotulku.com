@@ -33,41 +33,6 @@
 /* FontAwesome Free Icons Font */
 @import url('./fonts/fontawesome-free-5.12.1-web/css/all.min.css');
 
-.video {
-  position: absolute;
-  z-index: 0;
-  min-width: 100%;
-  min-height: 100%;
-  left: 0px;
-  top: 0px;
-  overflow: hidden;
-  opacity: 1;
-  background-image: none;
-  transition-property: opacity;
-  transition-duration: 1000ms;
-  filter: brightness(80%);
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .video {
-    display: block;
-  }
-}
-
-.welcome-mobile {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .welcome-desktop {
-    display: none;
-  }
-  .welcome-mobile {
-    display: inline;
-  }
-}
-
 /* ------------------------------------------------------------
 2. General Styles
 ------------------------------------------------------------ */
@@ -247,7 +212,31 @@ input[type="submit"]:focus {
   animation-fill-mode: both;
 }
 
+.video {
+  position: absolute;
+  z-index: 0;
+  min-width: 100%;
+  min-height: 100%;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  opacity: 1;
+  background-image: none;
+  transition-property: opacity;
+  transition-duration: 1000ms;
+  filter: brightness(80%);
+  display: none;
+}
 
+.welcome-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .video {
+    display: block;
+  }
+}
 
 /* =============================================================================
 3. Page loadig animation
@@ -2583,138 +2572,7 @@ blockquote {
 
 
 
-@media only screen and (max-width: 768px) {
-  .portfolio-grid figure {
-    width: 50%;
-  }
 
-  .page-title h2 {
-    position: relative;
-    font-size: 27px;
-    z-index: 1;
-    line-height: 35px;
-  }
-
-  .section-content {
-    padding: 40px;
-  }
-
-  .white-space-50-30 {
-    padding-bottom: 30px;
-  }
-
-  .info-list {
-    margin-top: 20px;
-  }
-
-  .blog-post-content {
-    padding: 0;
-    margin: 30px 0 0;
-  }
-
-  .blog-masonry.two-columns .item,
-  .blog-masonry.three-columns .item {
-    width: 100%;
-  }
-
-  .portfolio-grid figure,
-  .portfolio-grid.three-columns figure {
-    width: 50%;
-  }
-
-  .portfolio-grid.four-columns figure,
-  .portfolio-grid.five-columns figure {
-    width: 33.3333333%;
-  }
-
-  .page-portfolio-loaded .portfolio-page-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .portfolio-page-carousel .owl-nav .owl-prev {
-    margin-left: 0;
-  }
-
-  .portfolio-page-carousel .owl-nav .owl-next {
-    margin-right: 0;
-  }
-
-  .portfolio-page-carousel .owl-nav .owl-prev,
-  .portfolio-page-carousel .owl-nav .owl-next {
-    background-color: rgba(255,255,255,.55);
-  }
-
-  .single-page-content .portfolio-page-content {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-
-@media only screen and (max-width: 480px) {
-  .section-title-block.first-style .section-description {
-    margin: 7px 0 0;
-    width: 100%;
-  }
-
-  .portfolio-grid figure {
-    width: 100%;
-  }
-
-  .portfolio-grid.three-columns figure,
-  .portfolio-grid.two-columns figure {
-    width: 100%;
-  }
-
-  .portfolio-grid figure,
-  .portfolio-grid.two-columns figure,
-  .portfolio-grid.three-columns figure,
-  .portfolio-grid.four-columns figure,
-  .portfolio-grid.five-columns figure {
-    width: 100%;
-  }
-
-  .timeline-second-style .timeline-item {
-    position: relative;
-    display: block;
-  }
-
-  .timeline-second-style .left-part {
-    width: 100%;
-    display: block;
-    padding-left: 25px;
-    min-height: 100%;
-    text-align: left;
-  }
-
-  .timeline-second-style .divider {
-    left: 0;
-  }
-
-  .timeline-second-style .right-part {
-    width: 100%;
-    display: block;
-    padding-left: 25px;
-    padding-right: 0;
-  }
-
-  .single-page-content .post-content {
-    position: relative;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .controls.two-columns .right-column,
-  .controls.two-columns .left-column {
-    float: none;
-    margin: 0;
-    width: 100%;
-  }
-}
 
 
 
@@ -3141,20 +2999,5 @@ blockquote {
   left: 0;
 }
 
-@media only screen and (max-width: 1024px) {
- .lm-animated-bg {
-    display: none;
- }
 
- .title-block h2 {
-    font-size: 48px;
-    line-height: 56px;
-    margin: 0 0 10px;
-    text-align: center;
-  }
-
-  .title-block .sp-subtitle {
-    font-size: 18px;
-  }
-}
 

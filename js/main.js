@@ -191,18 +191,40 @@
             animateIn: 'animated-section-scaleUp'
         });
 
-        $('.text-rotation2').owlCarousel({
+        $('.text-rotation-testimonials').owlCarousel({
             loop: true,
             dots: false,
-            nav: false,
             margin: 0,
-            items: 2,
             autoplay: true,
             autoplayHoverPause: true,
             autoplayTimeout: 8000,
             animateOut: 'animated-section-scaleDown',
             animateIn: 'animated-section-scaleUp',
-            smartSpeed: 2500
+            smartSpeed: 2500,
+            responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items: 1,
+                    nav: true,
+                    navText: false
+                },
+                // breakpoint from 480 up
+                480 : {
+                    items: 1,
+                    nav: true,
+                    navText: false
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 2,
+                    nav: true,
+                    navText: false
+                },
+                1200 : {
+                    items: 5,
+                    nav: false
+                }
+            }
         });
 
         $('.text-rotation-funfacts').owlCarousel({
@@ -211,13 +233,30 @@
             nav: true,
             navText: false,
             margin: 0,
-            items: 3,
-            autoplay: false,
+            autoplay: true,
             autoplayHoverPause: false,
             autoplayTimeout: 3800,
             animateOut: 'animated-section-scaleDown',
             animateIn: 'animated-section-scaleUp',
-            smartSpeed: 1000
+            smartSpeed: 1000,
+            responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items: 2
+                },
+                // breakpoint from 480 up
+                480 : {
+                    items: 2,
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 2,
+                },
+                1200 : {
+                    items: 5,
+                    nav: false
+                }
+            }
         });
 
         $('.text-rotation-featuredon').owlCarousel({
