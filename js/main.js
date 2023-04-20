@@ -221,7 +221,7 @@
                     navText: false
                 },
                 1200 : {
-                    items: 5,
+                    items: 2,
                     nav: false
                 }
             }
@@ -253,7 +253,7 @@
                     items: 2,
                 },
                 1200 : {
-                    items: 5,
+                    items: 3,
                     nav: false
                 }
             }

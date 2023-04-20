@@ -171,8 +171,20 @@ x.
     margin: 0;
     width: 100%;
   }
-}
 
+  .service-item {
+    flex-direction: column;
+  }
+
+  .portfolio-grid figure .name {
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+    position: relative;
+    background-color: #131e2f;
+    border-radius: 10px;
+  }
+}
 
 /* =============================================================================
 10. Updates

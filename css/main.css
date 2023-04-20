@@ -1589,11 +1589,6 @@ textarea.form-control, textarea.form-control:focus {
   cursor: pointer;
 }
 
-.portfolio-grid {
-  margin-left: -7px;
-  margin-right: -7px;
-}
-
 .portfolio-grid figure {
   width: 33.33333%;
   float: left;
