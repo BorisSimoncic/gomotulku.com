@@ -88,18 +88,39 @@ var PageTransitions = (function ($, options) {
         ajaxLoader();
 
         $(".lmpixels-arrow-right").click(function() {
-            var activeItem = $('.main-menu a.active').parent("li");
-            activeItem.next("li").children("a").click();
-            if ( activeItem.is(':last-child') ) {
-                $('.main-menu li:first-child').children("a").click();
+
+            if (window.innerWidth > 1024) {
+                var activeItem = $('.main-menu a.active').parent("li");
+                activeItem.next("li").children("a").click();
+                if (activeItem.is(':last-child')) {
+                    $('.main-menu li:first-child').children("a").click();
+                }
+            }
+            else {
+                var activeItem = $('.mobile-menu-item-li a.active').parent("li");
+                activeItem.next("li").children("a").click();
+                if (activeItem.is(':last-child')) {
+                    $('.main-menu-mobile.mobile-only li:first-child').children("a").click();
+                }
             }
         });
 
         $(".lmpixels-arrow-left").click(function() {
-            var activeItem = $('.main-menu a.active').parent("li");
-            activeItem.prev("li").children("a").click();
-            if ( activeItem.is(':first-child') ) {
-                $('.main-menu li:last-child').children("a").click();
+
+            if (window.innerWidth > 1024) {
+                var activeItem = $('.main-menu a.active').parent("li");
+                activeItem.prev("li").children("a").click();
+                if (activeItem.is(':first-child')) {
+                    $('.main-menu li:last-child').children("a").click();
+                }
+            }
+            else {
+                var activeItem = $('.mobile-menu-item-li a.active').parent("li");
+                activeItem.prev("li").children("a").click();
+
+                if (activeItem.is(':first-child')) {
+                    $('.main-menu-mobile.mobile-only li:last-child').children("a").click();
+                }
             }
         });
     }
@@ -124,6 +145,7 @@ var PageTransitions = (function ($, options) {
             
         if(navLink) {
             $('ul.main-menu a').removeClass('active');
+            //$('ul.main-menu-mobile a').removeClass('active');
             navLink.addClass('active');
         }
     }
