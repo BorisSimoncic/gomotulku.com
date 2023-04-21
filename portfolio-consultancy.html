@@ -10,10 +10,18 @@
             </div>
         </div>
 
+        <script>
+            function resizeIframe(iframe) {
+                alert('x!');
+                console.log("hh: " + iframe.contentWindow.document.body.scrollHeight);
+                iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            }
+        </script>
+
         <div class="row">
             <div class="col-sm-8 col-md-8 portfolio-block" style="padding-top: 14px;">
 
-                <iframe src="https://isavedalife.charity/elementor-13889" width="100%" height="110%" style="border: 0;"></iframe>
+                <iframe src="https://isavedalife.charity/elementor-13889" width="100%" max-height="1500px" style="border: 0;" DOMContentLoaded="resizeIframe(this)" load="resizeIframe(this)" onload="resizeIframe(this)"></iframe>
 
             </div>
             <div class="col-sm-4 col-md-4 portfolio-block">
@@ -28,8 +36,9 @@
                         <li><p><img src="icons/knot.png" width="24px" style="display: inline"></img><span style="position: relative; top: -5px; padding-left: 10px">Cross-Cultural Competence</span></p></li>
                     </ul>
 
-                    <p class="text-justify">Need a strategic partner with extensive connections throughout the US, Canada, Italy, India, Malaysia, Philippines and more? We can help you find investment opportunities, broker deals, and facilitate connections between people, businesses & organizations.</p>
-                    <p>Additionally, we can help your company in developing Key Performance Indicators (KPIs) grounded in compassion and awareness. By doing so, we can foster a more harmonious and effective work culture, leading to sustained positive outcomes and overall success over the long term.</p>
+                    <p class="text-justify">Need a strategic partner who can help you design tailored programs to provide executives and managers an opportunity to offer their employees and clients something different? We can help you integrate kindness and compassion into your best practices, performance indicators and recognition programs to boost employee engagement and improve your customer experience.</p>
+                    <p class="text-justify">Our efforts are designed to cultivate a more mindful culture, enhance wellbeing in the workplace and empower your brand.</p>
+
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -38,12 +47,13 @@
                             <h3>Elevate Your Company</h3>
                         </div>
                         <ul class="tags" style="text-align: left">
-                            <li><a>Ethical Leadership</a></li>
-                            <li><a>Workplace Culture</a></li>
-                            <li><a>Networking</a></li>
-                            <li><a>Business Development</a></li>
-                            <li><a>International Business</a></li>
-                            <li><a>Innovation</a></li>
+                            <li><a>Leadership</a></li>
+                            <li><a>Business Innovation</a></li>
+                            <li><a>Relationship Value</a></li>
+                            <li><a>Retention</a></li>
+                            <li><a>ESG</a></li>
+                            <li><a>Inspiration</a></li>
+                            <li><a>Compassion in Business</a></li>
                         </ul>
                     </div>
                     <!-- /Technology -->
