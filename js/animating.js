@@ -55,6 +55,10 @@ var PageTransitions = (function ($, options) {
 
             location.hash = $(this).attr('href');
 
+            if (window.innerWidth < 1024) {
+                $('.menu-toggle').removeClass('open');
+                $('#site_header').addClass('mobile-menu-hide');
+            }
         });
 
         window.onhashchange = function(event) {
