@@ -178,17 +178,29 @@
         customScroll();
 
         // Text rotation
-        $('.text-rotation').owlCarousel({
+        $('.text-rotation-title').owlCarousel({
             loop: true,
             dots: false,
             nav: false,
-            margin: 0,
             items: 1,
+            margin: 330,
             autoplay: true,
             autoplayHoverPause: false,
             autoplayTimeout: 3800,
             animateOut: 'animated-section-scaleDown',
-            animateIn: 'animated-section-scaleUp'
+            animateIn: 'animated-section-scaleUp',
+            responsiveClass:true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                }
+            }
         });
 
         $('.text-rotation-testimonials').owlCarousel({
