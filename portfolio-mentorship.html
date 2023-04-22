@@ -13,7 +13,7 @@
 
         <script>
             function resizeIframe(iframe) {
-                //alert('x!');
+                alert('x: ' + iframe.contentWindow.document.body.scrollHeight);
                 //console.log("hh: " + iframe.contentWindow.document.body.scrollHeight);
                 iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
             }
@@ -75,7 +75,7 @@
             </div>
             <div class="col-sm-8 col-md-8 portfolio-block">
                 <div class="mobile-only">
-                    <iframe src="https://tidycal.com/m5vr2x3/request-for-an-orientation-call?embed&amp;showAvatar=true" onload="resizeIframe(this)" id="tidycal-embed-1k1ax-mobile" class="tidycal-embed" style="border: none; width: 1px; min-width: 100%; height: 110%; overflow:auto;-webkit-overflow-scrolling:touch;"></iframe>
+                    <iframe src="https://tidycal.com/m5vr2x3/request-for-an-orientation-call?embed&amp;showAvatar=true" onload="resizeIframe(this)" id="tidycal-embed-1k1ax-mobile" class="tidycal-embed" style="border: none; width: 1px; min-width: 100%; min-height: 700px; overflow:auto;-webkit-overflow-scrolling:touch;"></iframe>
                 </div>
             </div>
         </div>
