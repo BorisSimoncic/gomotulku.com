@@ -206,6 +206,7 @@
         $('.text-rotation-testimonials').owlCarousel({
             loop: true,
             dots: false,
+            nav: false,
             margin: 0,
             autoplay: true,
             autoplayHoverPause: true,
@@ -217,24 +218,17 @@
                 // breakpoint from 0 up
                 0 : {
                     items: 1,
-                    nav: true,
-                    navText: false
                 },
                 // breakpoint from 480 up
                 480 : {
                     items: 1,
-                    nav: true,
-                    navText: false
                 },
                 // breakpoint from 768 up
                 768 : {
                     items: 2,
-                    nav: true,
-                    navText: false
                 },
                 1200 : {
                     items: 2,
-                    nav: false
                 }
             }
         });
@@ -245,7 +239,7 @@
             nav: true,
             navText: false,
             margin: 0,
-            autoplay: true,
+            autoplay: false,
             autoplayHoverPause: false,
             autoplayTimeout: 3800,
             animateOut: 'animated-section-scaleDown',
