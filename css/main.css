@@ -2797,6 +2797,7 @@ blockquote {
   margin-bottom: 0px;
   padding: 0px;
   flex: 0 0 45%;
+  color: #222222;
 }
 
 .modal-input-email {
