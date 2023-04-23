@@ -228,7 +228,22 @@ x.
     right: 0;
     width: 100%;
     position: relative;
-    margin-top: 30px;
+    margin-top: 0px;
+  }
+
+  .header .privacy {
+    margin-top: 25px;
+    right: 0;
+    width: 100%;
+    position: relative;
+    padding: 5px 10px 0px;
+    text-align: center;
+  }
+
+  .header .privacy a {
+    color: #bbb;
+    font-size: 12px;
+    font-weight: 300;
   }
 
   .page {

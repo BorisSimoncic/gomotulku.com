@@ -540,6 +540,21 @@ input[type="submit"]:focus {
   text-align: center;
 }
 
+.header .privacy {
+  width: 380px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 10px 35px;
+  text-align: center;
+}
+
+.header .privacy a {
+  color: #bbb;
+  font-size: 12px;
+  font-weight: 300;
+}
+
 /* ------------------------------------------------------------
 5. Page Content
 ------------------------------------------------------------ */
