@@ -1951,11 +1951,11 @@ textarea.form-control, textarea.form-control:focus {
   width: 40px;
   text-align: center;
   color: #b5b5b5;
-  background-color: #444;
+  background-color: #131e2f;
 }
 
 .ajax-page-nav > div.nav-item a:hover {
-  background-color: #131e2f;
+  background-color: rgba(0,0,0,.6);
   color: #fff;
 }
 
