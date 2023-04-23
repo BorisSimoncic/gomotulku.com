@@ -2792,7 +2792,7 @@ blockquote {
   color: gray;
 }
 
-.modal-input-firstname, .modal-input-lastname {
+.modal-input-firstname, .modal-input-lastname, .modal-input-email {
   margin-right: 10px;
   margin-bottom: 0px;
   padding: 0px;
@@ -2800,10 +2800,7 @@ blockquote {
 }
 
 .modal-input-email {
-  margin-right: 10px;
-  margin-bottom: 0px;
   margin-top: 18px;
-  padding: 0px;
   flex: 0 0 92%;
 }
 

@@ -471,7 +471,7 @@ x.
     padding: 20px;
   }
 
-  .modal-input-firstname, .modal-input-lastname {
+  .modal-input-firstname, .modal-input-lastname, .modal-input-email {
     margin-right: 0px;
     margin-bottom: 15px;
     padding: 0px;
@@ -483,10 +483,7 @@ x.
   }
 
   .modal-input-email {
-    margin-right: 0px;
-    margin-bottom: 15px;
     margin-top: 0px;
-    padding: 0px;
     flex: 100%;
   }
 
