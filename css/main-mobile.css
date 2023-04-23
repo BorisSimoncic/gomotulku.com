@@ -24,6 +24,15 @@
   }
 }
 
+/* ------------------------------------------------------------
+4. Header
+------------------------------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+  .social-links {
+    margin: 0px;
+  }
+}
 
 /* ------------------------------------------------------------
 5. Page Content
@@ -446,5 +455,60 @@ x.
     font-size: 16px;
     margin: 5px;
     margin-top: 10px;
+  }
+}
+
+/* =============================================================================
+11. Modal
+============================================================================= */
+
+
+@media screen and (max-width: 767px) {
+
+  .modal-content {
+    background-color: #f3f8ff;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .modal-input-firstname, .modal-input-lastname {
+    margin-right: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+    flex: 100%;
+  }
+
+  .modal-input-firstname {
+    margin-top: 10px;
+  }
+
+  .modal-input-email {
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    padding: 0px;
+    flex: 100%;
+  }
+
+  .col-xs-12 h4 {
+    font-size: 26px;
+  }
+
+  .col-xs-12 p {
+    padding-right: 0px;
+    font-size: 14px;
+  }
+
+  .form-group-with-icon label {
+    font-size: 14px;
+  }
+
+  .subscribe-disclaimer p {
+    font-size: 10px;
+  }
+
+  .close {
+    margin-top: -10px;
+    margin-right: -10px;
   }
 }
