@@ -232,7 +232,7 @@ x.
   }
 
   .header .privacy {
-    margin-top: 25px;
+    margin-top: 45px;
     right: 0;
     width: 100%;
     position: relative;
@@ -467,7 +467,8 @@ x.
   }
 
   .fun-fact h4 {
-    font-size: 16px;
+    font-size: 16px!important;
+    line-height: 25px!important;
     margin: 5px;
     margin-top: 10px;
   }
