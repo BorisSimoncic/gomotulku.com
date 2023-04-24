@@ -462,6 +462,25 @@
                 modal.style.display = 'none';
             }
         }
+
+        // // Get the sidemenu and the close button
+        // const siteHeader = document.getElementById('site_header');
+        // // Add a click event listener to the document
+        // document.addEventListener('click', (event) => {
+        //     // Check if the target of the event is inside the sidemenu
+        //     const isClickInside = siteHeader.contains(event.target);
+        //     const isOpen = $('.menu-toggle').hasClass('open');
+        //     if (!isClickInside && isOpen) {
+        //         // siteHeader.addClass('mobile-menu-hide');
+        //         // $('.menu-toggle').removeClass('open');
+        //         // setTimeout(function(){
+        //         //     siteHeader.addClass('animate');
+        //         // }, 500);
+        //         mobileMenuHide();
+        //     }
+        // });
+
     });
 
 })(jQuery);
+
