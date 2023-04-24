@@ -2683,18 +2683,10 @@ blockquote {
   display: block;
 }
 
-/*.text .full {
-  display: none!important;
-}
-
-.text .show {
-  display: block;
-}*/
-
 .text-5lines {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5; /* show only 5 lines */
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
@@ -2706,6 +2698,7 @@ blockquote {
 
 .text-expanded {
   -webkit-line-clamp: initial;
+  height: auto !important; // Override the height for Safari fallback
 }
 
 #funfacts .owl-nav {

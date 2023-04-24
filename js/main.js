@@ -432,6 +432,15 @@
             });
         });
 
+        // Fallback for Safari
+        if (!CSS.supports('-webkit-line-clamp', '5')) {
+            textElems.forEach((elem) => {
+                elem.style.display = 'block';
+                elem.style.height = 'calc(1.2em * 5)'; // 1.2em is the assumed line-height
+                elem.style.overflow = 'hidden';
+            });
+        }
+
         document.getElementById('get-updates-btn').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent the default action of the anchor tag
             var modal = document.getElementById('modal');
