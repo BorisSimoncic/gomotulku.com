@@ -2683,6 +2683,27 @@ blockquote {
   display: block;
 }
 
+.fun-fact-no-hover {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 0 15px;
+  background: #131e2f;
+  padding: 25px 10px 15px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .text-5lines {
   overflow: hidden;
   display: -webkit-box;
