@@ -530,4 +530,11 @@ x.
     margin-top: -10px;
     margin-right: -10px;
   }
+
+  .modal-content-message {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 250px;
+    background-image: none;
+  }
 }

@@ -440,46 +440,6 @@
                 elem.style.overflow = 'hidden';
             });
         }
-
-        document.getElementById('get-updates-btn').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default action of the anchor tag
-            var modal = document.getElementById('modal');
-            modal.style.display = 'block';
-        });
-
-// Get the modal and the close button element
-        var modal = document.getElementById('modal');
-        var closeButton = document.querySelector('.close');
-
-// When the user clicks the close button, close the modal
-        closeButton.onclick = function() {
-            modal.style.display = 'none';
-        }
-
-// When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        }
-
-        // // Get the sidemenu and the close button
-        // const siteHeader = document.getElementById('site_header');
-        // // Add a click event listener to the document
-        // document.addEventListener('click', (event) => {
-        //     // Check if the target of the event is inside the sidemenu
-        //     const isClickInside = siteHeader.contains(event.target);
-        //     const isOpen = $('.menu-toggle').hasClass('open');
-        //     if (!isClickInside && isOpen) {
-        //         // siteHeader.addClass('mobile-menu-hide');
-        //         // $('.menu-toggle').removeClass('open');
-        //         // setTimeout(function(){
-        //         //     siteHeader.addClass('animate');
-        //         // }, 500);
-        //         mobileMenuHide();
-        //     }
-        // });
-
     });
 
 })(jQuery);

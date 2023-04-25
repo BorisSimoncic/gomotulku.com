@@ -2750,7 +2750,6 @@ blockquote {
 
 
 .modal {
-  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -2759,7 +2758,17 @@ blockquote {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+
+  /*display: none;*/
+  /*opacity: 0;*/
+  /*transition: opacity 0.5s ease-in-out; !* Set the fade-in transition *!*/
 }
+
+/*.visible {*/
+/*  display: block;*/
+/*  opacity: 1;*/
+/*}*/
 
 .modal-content {
   position: absolute;
@@ -2773,6 +2782,21 @@ blockquote {
   overflow-y: auto; /* added to handle content overflow */
   max-height: 90vh; /* added to prevent the modal from overflowing the screen height */
   padding: 30px;
+
+  /*display: none;*/
+  /*opacity: 0;*/
+  /*transition: opacity 0.5s ease-in-out; !* Set the fade-in transition *!*/
+}
+
+/*.modal-content-visible {*/
+/*  display: block;*/
+/*  opacity: 1;*/
+/*}*/
+
+.modal-content-message {
+  background-color: #f3f8ff;
+  background-image: none;
+  border-radius: 10px;
 }
 
 .close {
@@ -2782,6 +2806,11 @@ blockquote {
   font-weight: bold;
   cursor: pointer;
   margin-right: 52px;
+}
+
+.close-message {
+  margin-top: -18px;
+  margin-right: -15px;
 }
 
 .close:hover,
@@ -2800,6 +2829,13 @@ blockquote {
     background-size: contain ; /* This will scale the image to cover the entire element */
     background-position: center; /* This will center the image within the element */
     background-repeat: no-repeat; /* This will prevent the image from repeating */
+  }
+
+  .modal-content-message {
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 300px;
+    background-image: none;
   }
 }
 
