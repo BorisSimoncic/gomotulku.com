@@ -786,7 +786,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .has-error .form-control ~ .form-control-border {
-  border-color: #7e1b1b;
+  /*border-color: #7e1b1b;*/
 }
 
 /* Placeholders */
