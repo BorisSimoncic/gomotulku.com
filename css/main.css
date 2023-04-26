@@ -2787,8 +2787,12 @@ blockquote {
 
 .modal-content-message {
   background-color: #f3f8ff;
-  background-image: none;
   border-radius: 10px;
+  background-image: url('../img/subscribe_top.png'); /* Replace with the correct path to your image */
+  background-size: contain ; /* This will scale the image to cover the entire element */
+  background-position-x: center; /* This will center the image within the element */
+  background-position-y: top; /* This will center the image within the element */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
 }
 
 .close {
@@ -2801,7 +2805,7 @@ blockquote {
 }
 
 .close-message {
-  margin-top: -18px;
+  margin-top: -258px;
   margin-right: -15px;
 }
 
@@ -2824,14 +2828,15 @@ blockquote {
   }
 
   .modal-content-message {
-    min-width: 700px;
-    max-width: 700px;
+    min-width: 500px;
+    max-width: 500px;
     min-height: 300px;
-    background-image: none;
-    background-image: url('../img/subscribe.png'); /* Replace with the correct path to your image */
-    background-size: contain ; /* This will scale the image to cover the entire element */
-    background-position: center; /* This will center the image within the element */
+    background-image: url('../img/subscribe_top.png'); /* Replace with the correct path to your image */
+    background-size: 500px ; /* This will scale the image to cover the entire element */
+    background-position-x: center; /* This will center the image within the element */
+    background-position-y: top; /* This will center the image within the element */
     background-repeat: no-repeat; /* This will prevent the image from repeating */
+    padding-top: 270px;
   }
 }
 

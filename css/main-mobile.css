@@ -541,6 +541,18 @@ x.
     min-width: 300px;
     max-width: 300px;
     min-height: 250px;
-    background-image: none;
+    background-color: #f3f8ff;
+    border-radius: 10px;
+    background-image: url('../img/subscribe_top.png'); /* Replace with the correct path to your image */
+    background-size: contain ; /* This will scale the image to cover the entire element */
+    background-position-x: center; /* This will center the image within the element */
+    background-position-y: top; /* This will center the image within the element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+   padding-top: 140px;
+  }
+
+  .close-message {
+    margin-top: -133px;
+    margin-right: -12px;
   }
 }
