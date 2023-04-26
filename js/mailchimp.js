@@ -15,6 +15,9 @@
 var $mcj = jQuery.noConflict(true);
 
 document.addEventListener("DOMContentLoaded", function() {
+
+    // Mutation observers
+
     const successResponse = document.getElementById("mce-success-response");
     const errorResponse = document.getElementById("mce-error-response");
 
@@ -22,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
         for (const mutation of mutations) {
             if (mutation.addedNodes.length > 0) {
                 onElementPopulatedSuccess();
-                successObserver.disconnect();
                 break;
             }
         }
@@ -32,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         for (const mutation of mutations) {
             if (mutation.addedNodes.length > 0) {
                 onElementPopulatedError();
-                errorObserver.disconnect();
                 break;
             }
         }
@@ -41,68 +42,77 @@ document.addEventListener("DOMContentLoaded", function() {
     const config = { childList: true, subtree: true };
     successObserver.observe(successResponse, config);
     errorObserver.observe(errorResponse, config);
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+    // Modals
 
-// Get the modal and the close button element
     const modalGetUpdates = document.getElementById('modalGetUpdates');
     const modalGetUpdatesMessage = document.getElementById('modalGetUpdatesMessage');
     const closeModalGetUpdates = document.getElementById('closeModalGetUpdates');
     const closeModalGetUpdatesMessage = document.getElementById('closeModalGetUpdatesMessage');
 
     document.getElementById('get-updates-btn').addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent the default action of the anchor tag
-        modalGetUpdates.style.display = 'block';
-        //modalGetUpdatesMessage.style.display = 'block';
-        //var modalGetUpdatesMessage = document.getElementById('modalGetUpdatesMessage');
-        //modalGetUpdatesMessage.classList.add('visible');
-
-        //var modalGetUpdatesMessage1 = document.getElementById('modalGetUpdatesMessageContent');
-        //modalGetUpdatesMessage1.classList.add('modal-content-visible');
+        event.preventDefault();
+        showModal(modalGetUpdates);
     });
 
     closeModalGetUpdates.onclick = function () {
-        modalGetUpdates.style.display = 'none';
+        var modalGetUpdates = document.getElementById('modalGetUpdates');
+        hideModal(modalGetUpdates);
     }
 
     closeModalGetUpdatesMessage.onclick = function () {
-        modalGetUpdatesMessage.style.display = 'none';
+        var modalGetUpdatesMessage = document.getElementById('modalGetUpdatesMessage');
+        hideModal(modalGetUpdatesMessage);
+    }
+
+    function showModal(modal) {
+        modal.classList.add('modal-display');
+        setTimeout(function() {
+            modal.classList.add('modal-visible');
+        }, 50);
+    }
+
+    function hideModal(modal) {
+        modal.classList.remove('modal-visible');
+        setTimeout(function() {
+            modal.classList.remove('modal-display');
+        }, 500);
+    }
+
+    function onElementPopulatedSuccess() {
+
+        hideModal(modalGetUpdates);
+        showModal(modalGetUpdatesMessage);
+        const mailchimpResponse = document.getElementById("mailchimp-response");
+        mailchimpResponse.textContent = $('#mce-success-response').text();
+        clearFormInputs('mc-embedded-subscribe-form');
+    }
+
+    function onElementPopulatedError() {
+        hideModal(modalGetUpdates);
+        showModal(modalGetUpdatesMessage);
+        const mailchimpResponse = document.getElementById("mailchimp-response");
+        mailchimpResponse.textContent = $('#mce-error-response').text();
+        clearFormInputs('mc-embedded-subscribe-form');
+    }
+
+    function clearFormInputs(formId) {
+        const form = document.getElementById(formId);
+        const inputs = form.querySelectorAll('input, textarea, select');
+
+        inputs.forEach(input => {
+            if (input.type === 'checkbox' || input.type === 'radio') {
+                input.checked = false;
+            } else {
+                input.value = '';
+            }
+        });
+
+        $('#modal-input-firstname').removeClass('form-group-focus');
+        $('#modal-input-lastname').removeClass('form-group-focus');
+        $('#modal-input-email').removeClass('form-group-focus');
+        $('#mce-success-response').textContent = '';
+        $('#mce-error-response').textContent = '';
     }
 });
 
-function onElementPopulatedSuccess() {
-    const modalGetUpdates = document.getElementById('modalGetUpdates');
-    const modalGetUpdatesMessage = document.getElementById('modalGetUpdatesMessage');
-    modalGetUpdates.style.display = 'none';
-    modalGetUpdatesMessage.style.display = 'block';
-    const mailchimpResponse = document.getElementById("mailchimp-response");
-    mailchimpResponse.textContent = $('#mce-success-response').text();
-    clearFormInputs('mc-embedded-subscribe-form');
-}
-
-function onElementPopulatedError() {
-    const modalGetUpdates = document.getElementById('modalGetUpdates');
-    const modalGetUpdatesMessage = document.getElementById('modalGetUpdatesMessage');
-    modalGetUpdates.style.display = 'none';
-    modalGetUpdatesMessage.style.display = 'block';
-    const mailchimpResponse = document.getElementById("mailchimp-response");
-    mailchimpResponse.textContent = $('#mce-error-response').text();
-    clearFormInputs('mc-embedded-subscribe-form');
-}
-
-function clearFormInputs(formId) {
-    const form = document.getElementById(formId);
-    const inputs = form.querySelectorAll('input, textarea, select');
-
-    inputs.forEach(input => {
-        if (input.type === 'checkbox' || input.type === 'radio') {
-            input.checked = false;
-        } else {
-            input.value = '';
-        }
-    });
-
-    $('#mce-success-response').textContent = '';
-    $('#mce-error-response').textContent = '';
-}

@@ -2759,16 +2759,17 @@ blockquote {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-
-  /*display: none;*/
-  /*opacity: 0;*/
-  /*transition: opacity 0.5s ease-in-out; !* Set the fade-in transition *!*/
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-/*.visible {*/
-/*  display: block;*/
-/*  opacity: 1;*/
-/*}*/
+.modal-display {
+  display: block;
+}
+
+.modal-visible {
+  opacity: 1;
+}
 
 .modal-content {
   position: absolute;
@@ -2782,16 +2783,7 @@ blockquote {
   overflow-y: auto; /* added to handle content overflow */
   max-height: 90vh; /* added to prevent the modal from overflowing the screen height */
   padding: 30px;
-
-  /*display: none;*/
-  /*opacity: 0;*/
-  /*transition: opacity 0.5s ease-in-out; !* Set the fade-in transition *!*/
 }
-
-/*.modal-content-visible {*/
-/*  display: block;*/
-/*  opacity: 1;*/
-/*}*/
 
 .modal-content-message {
   background-color: #f3f8ff;
