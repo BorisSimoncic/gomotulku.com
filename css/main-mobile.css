@@ -490,6 +490,12 @@ x.
     background-color: #f3f8ff;
     border-radius: 20px;
     padding: 20px;
+    background-image: url('../img/subscribe_small.png'); /* Replace with the correct path to your image */
+    background-size: 60% ; /* This will scale the image to cover the entire element */
+    background-position-x: center; /* This will center the image within the element */
+    background-position-y: top; /* This will center the image within the element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    padding-top: 120px;
   }
 
   .modal-input-firstname, .modal-input-lastname, .modal-input-email {
@@ -527,7 +533,7 @@ x.
   }
 
   .close {
-    margin-top: -10px;
+    margin-top: -110px;
     margin-right: -10px;
   }
 
