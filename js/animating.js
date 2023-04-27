@@ -97,15 +97,12 @@ var PageTransitions = (function ($, options) {
                 }
             }
             else {
-                var activeItemA = $('.mobile-menu-item-li a.active');
-                var activeItemLi = $('.mobile-menu-item-li a.active').parent("li");
-
-                if (activeItemLi.next("li").length === 0) {
-                    $('.main-menu-mobile.mobile-only li:first-child').children("a").click();
+                var activeItemLi = document.querySelector(".main-menu-mobile.mobile-only li.active");
+                if (activeItemLi === null || activeItemLi.nextElementSibling === null) {
+                    document.querySelector('.main-menu-mobile.mobile-only li:first-child a').click();
                 } else {
-                    activeItemLi.removeClass('active');
-                    activeItemA.removeClass('active');
-                    activeItemLi.next("li").children("a").addClass('active').click();
+                    activeItemLi.classList.remove('active');
+                    activeItemLi.nextElementSibling.querySelector('a').click();
                 }
             }
         });
@@ -120,15 +117,12 @@ var PageTransitions = (function ($, options) {
                 }
             }
             else {
-                var activeItemA = $('.mobile-menu-item-li a.active');
-                var activeItemLi = $('.mobile-menu-item-li a.active').parent("li");
-
-                if (activeItemLi.prev("li").length === 0) {
-                    $('.main-menu-mobile.mobile-only li:last-child').children("a").click();
+                var activeItemLi = document.querySelector(".main-menu-mobile.mobile-only li.active");
+                if (activeItemLi === null || activeItemLi.previousElementSibling.length === 0) {
+                    document.querySelector('.main-menu-mobile.mobile-only li:last-child a').click();
                 } else {
-                    activeItemLi.removeClass('active');
-                    activeItemA.removeClass('active');
-                    activeItemLi.prev("li").children("a").addClass('active').click();
+                    activeItemLi.classList.remove('active');
+                    activeItemLi.previousElementSibling.querySelector('a').click();
                 }
             }
         });
