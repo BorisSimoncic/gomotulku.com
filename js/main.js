@@ -440,6 +440,17 @@
                 elem.style.overflow = 'hidden';
             });
         }
+
+        const header = document.getElementById("site_header");
+        const menuToggle = document.getElementById("menu_toggle");
+
+        document.addEventListener("click", function(event) {
+            const headerRect = header.getBoundingClientRect();
+            if (headerRect.width > 100 && event.clientX < headerRect.left) {
+                menuToggle.classList.remove('open');
+                header.classList.add("mobile-menu-hide");
+             }
+        });
     });
 
 })(jQuery);
