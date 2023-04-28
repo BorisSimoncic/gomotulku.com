@@ -98,10 +98,12 @@ var PageTransitions = (function ($, options) {
             }
             else {
                 var activeItemLi = document.querySelector(".main-menu-mobile.mobile-only li.active");
-                if (activeItemLi === null || activeItemLi.nextElementSibling === null) {
+                if (activeItemLi === null) {
+                    document.querySelector('.main-menu-mobile.mobile-only li:nth-child(2) a').click();
+                } else if (activeItemLi.nextElementSibling === null) {
                     document.querySelector('.main-menu-mobile.mobile-only li:first-child a').click();
-                } else {
-                    activeItemLi.classList.remove('active');
+                }
+                else {
                     activeItemLi.nextElementSibling.querySelector('a').click();
                 }
             }
@@ -118,10 +120,9 @@ var PageTransitions = (function ($, options) {
             }
             else {
                 var activeItemLi = document.querySelector(".main-menu-mobile.mobile-only li.active");
-                if (activeItemLi === null || activeItemLi.previousElementSibling.length === 0) {
+                if (activeItemLi === null || activeItemLi.previousElementSibling === null) {
                     document.querySelector('.main-menu-mobile.mobile-only li:last-child a').click();
                 } else {
-                    activeItemLi.classList.remove('active');
                     activeItemLi.previousElementSibling.querySelector('a').click();
                 }
             }
@@ -147,9 +148,15 @@ var PageTransitions = (function ($, options) {
         navLink = $(navLink);
             
         if(navLink) {
+            // Desktop
             $('ul.main-menu a').removeClass('active');
-            //$('ul.main-menu-mobile a').removeClass('active');
+
+            // Mobile
+            $('ul.main-menu-mobile .mobile-menu-item-li').removeClass('active');
+            $('ul.main-menu-mobile a').removeClass('active');
             navLink.addClass('active');
+            navLink.siblings().addClass('active');
+            navLink.parent('li').addClass('active');
         }
     }
 
