@@ -534,11 +534,13 @@ x.
 
   .close {
     margin-top: -110px;
-    margin-left: -10px;
+    margin-left: -0px;
     float: left;
   }
 
   .modal-content-message {
+    padding-left: 10px;
+    padding-right: 10px;
     min-width: 300px;
     max-width: 300px;
     min-height: 250px;
