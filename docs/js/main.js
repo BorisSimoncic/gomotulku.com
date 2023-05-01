@@ -31,7 +31,6 @@
     }
     // /Portfolio subpage filters
 
-
     // Hide Mobile menu
     function mobileMenuHide() {
         var windowWidth = $(window).width(),

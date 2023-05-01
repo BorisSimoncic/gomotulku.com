@@ -1,5 +1,6 @@
 <div id="ajax-page" class="ajax-page-content">
     <script src="https://kit.fontawesome.com/839bee8405.js" crossorigin="anonymous"></script>
+    <script src="js/portfolio.js"></script>
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
             <div class="nav-item ajax-page-prev-next">
@@ -47,21 +48,8 @@
                     <!-- /Technology -->
 
                     <script>
-                        const copyToClipboard = () => {
-                            const url = window.location.href;
-                            navigator.clipboard.writeText(url)
-                                .then(() => {
-                                    console.log('URL copied to clipboard');
-                                })
-                                .catch((err) => {
-                                    console.error('Error copying URL to clipboard:', err);
-                                });
-                        }
-
-                        const linkShareIcon = document.querySelector('#share_link');
-                        linkShareIcon.addEventListener('click', copyToClipboard);
+                        document.querySelector('#share_link_coaching').addEventListener('click', copyToClipboard);
                     </script>
-
 
                     <!-- Share Buttons -->
                     <div class="btn-group share-buttons" style="margin-top: 30px">
@@ -73,7 +61,7 @@
                         <a style="margin: 0px;" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fborissimoncic.github.io%2Fgomotulku-v2%2F%23portfolio%2Fportfolio-coaching" target="_blank" class="btn"><img src="icons/Whatsapp.svg" style="width:70%"></img></a>
                         <a style="margin: 0px;" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//borissimoncic.github.io/gomotulku-v2/%23portfolio/portfolio-coaching" target="_blank" class="btn"><img src="icons/Linkedin.svg" style="width:70%"></img></a>
                         <a style="margin: 0px;" href="weixin://dl/chat?url=https%3A%2F%2Fborissimoncic.github.io%2Fgomotulku-v2%2F%23portfolio%2Fportfolio-coaching" target="_blank" class="btn"><img src="icons/Telegram.svg" style="width:70%"></img></a>
-                        <a id="share_link" style="margin: 0px;" target="_blank" class="btn"><img src="icons/link.svg" style="width:70%"></img></a>
+                        <a id="share_link_coaching" style="margin: 0px;" target="_blank" class="btn"><img src="icons/link.svg" style="width:70%"></img></a>
                     </div>
                     <!-- /Share Buttons -->
                 </div>

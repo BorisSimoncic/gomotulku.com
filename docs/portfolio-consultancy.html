@@ -1,4 +1,5 @@
 <div id="ajax-page" class="ajax-page-content">
+    <script src="js/portfolio.js"></script>
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
             <div class="nav-item ajax-page-prev-next">
@@ -20,7 +21,7 @@
 
         <div class="row">
             <div class="col-sm-8 col-md-8 portfolio-block desktop-only" style="padding-top: 24px;">
-                <iframe src="https://isavedalife.charity/gomotulku-com-consultancy-form" width="100%" height="110%" style="border: 0;"></iframe>
+                <iframe src="https://isavedalife.charity/gomotulku-com-consultancy-form" width="100%" height="100%" style="border: 0; overflow-x: hidden;"></iframe>
             </div>
             <div class="col-sm-4 col-md-4 portfolio-block">
                 <!-- Project Description -->
@@ -56,6 +57,10 @@
                     </div>
                     <!-- /Technology -->
 
+                    <script>
+                        document.querySelector('#share_link_consultancy').addEventListener('click', copyToClipboard);
+                    </script>
+
                     <!-- Share Buttons -->
                     <div class="btn-group share-buttons" style="margin-top: 30px">
                         <div class="block-title" style="top: -10px;">
@@ -66,7 +71,7 @@
                         <a style="margin: 0px;" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fborissimoncic.github.io%2Fgomotulku-v2%2F%23portfolio%2Fportfolio-coaching" target="_blank" class="btn"><img src="icons/Whatsapp.svg" style="width:70%"></img></a>
                         <a style="margin: 0px;" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//borissimoncic.github.io/gomotulku-v2/%23portfolio/portfolio-coaching" target="_blank" class="btn"><img src="icons/Linkedin.svg" style="width:70%"></img></a>
                         <a style="margin: 0px;" href="weixin://dl/chat?url=https%3A%2F%2Fborissimoncic.github.io%2Fgomotulku-v2%2F%23portfolio%2Fportfolio-coaching" target="_blank" class="btn"><img src="icons/Telegram.svg" style="width:70%"></img></a>
-                        <a id="share_link" style="margin: 0px;" target="_blank" class="btn"><img src="icons/link.svg" style="width:70%"></img></a>
+                        <a id="share_link_consultancy" style="margin: 0px;" target="_blank" class="btn"><img src="icons/link.svg" style="width:70%"></img></a>
                     </div>
                     <!-- /Share Buttons -->
                 </div>
