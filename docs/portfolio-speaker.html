@@ -67,8 +67,17 @@
                 <!-- Project Description -->
             </div>
             <div class="col-sm-8 col-md-8 portfolio-block mobile-only" style="padding-top: 24px;">
-                <iframe src="https://isavedalife.charity/gomotulku-com-speaker-form" width="100%" style="border: 0; height: 1300px; overflow-x: hidden;"></iframe>
+                <iframe id="iframeSpeakerMobile" src="https://isavedalife.charity/gomotulku-com-speaker-form" width="100%" style="border: 0; height: 1300px; overflow-x: hidden;"></iframe>
             </div>
+
+            <script>
+                window.addEventListener('message', function(event) {
+                    if (event.data === 'formSubmitted') {
+                        document.getElementById('iframeSpeakerMobile').style.height = '300px';
+                        window.scrollTo(0, 0);
+                    }
+                });
+            </script>
         </div>
     </div>
 </div>
