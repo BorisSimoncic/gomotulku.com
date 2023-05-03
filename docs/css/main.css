@@ -917,6 +917,7 @@ textarea.form-control, textarea.form-control:focus {
   position: relative;
   font-size: 21px;
   z-index: 1;
+  line-height: 28px;
 }
 
 .block-title h3 span {
