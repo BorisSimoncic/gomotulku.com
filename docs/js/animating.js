@@ -1,10 +1,3 @@
-/*
-* Template Name: BreezyCV - Resume / CV / vCard / Portfolio Template
-* Author: LMPixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.5.0
-*/
-
 var PageTransitions = (function ($, options) {
 "use strict";
     var sectionsContainer = $(".animated-sections"),
@@ -98,9 +91,9 @@ var PageTransitions = (function ($, options) {
                 var currentHref = getActiveSection();
                 var nextHref = "#home";
                 if (currentHref === "#home") nextHref = "#about-me";
-                else if (currentHref === "#about-me") nextHref = "#resume";
-                else if (currentHref === "#resume") nextHref = "#portfolio";
-                else if (currentHref === "#portfolio") nextHref = "#contact";
+                else if (currentHref === "#about-me") nextHref = "#the-details";
+                else if (currentHref === "#the-details") nextHref = "#services";
+                else if (currentHref === "#services") nextHref = "#contact";
                 else if (currentHref === "#contact") nextHref = "#home";
                 const ul = document.querySelector(".main-menu-mobile.mobile-only");
                 const a = ul.querySelector(`a[href="${nextHref}"]`);
@@ -122,9 +115,9 @@ var PageTransitions = (function ($, options) {
                 var prevHref = "#home";
                 if (currentHref === "#home") prevHref = "#contact";
                 else if (currentHref === "#about-me") prevHref = "#home";
-                else if (currentHref === "#resume") prevHref = "#about-me";
-                else if (currentHref === "#portfolio") prevHref = "#resume";
-                else if (currentHref === "#contact") prevHref = "#portfolio";
+                else if (currentHref === "#the-details") prevHref = "#about-me";
+                else if (currentHref === "#services") prevHref = "#the-details";
+                else if (currentHref === "#contact") prevHref = "#services";
                 const ul = document.querySelector(".main-menu-mobile.mobile-only");
                 const a = ul.querySelector(`a[href="${prevHref}"]`);
                 a.click();
