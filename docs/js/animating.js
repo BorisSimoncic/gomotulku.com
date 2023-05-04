@@ -76,12 +76,10 @@ var PageTransitions = (function ($, options) {
 
         var menu = options.menu,
         pageStart = getActiveSection();
-        console.log(pageStart);
         location.hash = pageStart;
         var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');
 
         activeMenuItem(menuLink);
-
         Animate(menuLink);
 
         $('body').append('<div id="page-ajax-loaded" class="page-ajax-loaded animated animated-section-moveFromLeft"></div>');
@@ -98,15 +96,12 @@ var PageTransitions = (function ($, options) {
             }
             else {
                 var currentHref = getActiveSection();
-                //console.log("CurrentHref: " + currentHref);
-                var nextHref = "";
+                var nextHref = "#home";
                 if (currentHref === "#home") nextHref = "#about-me";
                 else if (currentHref === "#about-me") nextHref = "#resume";
                 else if (currentHref === "#resume") nextHref = "#portfolio";
                 else if (currentHref === "#portfolio") nextHref = "#contact";
                 else if (currentHref === "#contact") nextHref = "#home";
-                else nextHref = "#home";
-                //console.log("NextHref: " + nextHref);
                 const ul = document.querySelector(".main-menu-mobile.mobile-only");
                 const a = ul.querySelector(`a[href="${nextHref}"]`);
                 a.click();
@@ -124,15 +119,12 @@ var PageTransitions = (function ($, options) {
             }
             else {
                 var currentHref = getActiveSection();
-                //console.log("CurrentHref: " + currentHref);
-                var prevHref = "";
+                var prevHref = "#home";
                 if (currentHref === "#home") prevHref = "#contact";
                 else if (currentHref === "#about-me") prevHref = "#home";
                 else if (currentHref === "#resume") prevHref = "#about-me";
                 else if (currentHref === "#portfolio") prevHref = "#resume";
                 else if (currentHref === "#contact") prevHref = "#portfolio";
-                else prevHref = "#home";
-                //console.log("prevHref: " + prevHref);
                 const ul = document.querySelector(".main-menu-mobile.mobile-only");
                 const a = ul.querySelector(`a[href="${prevHref}"]`);
                 a.click();
