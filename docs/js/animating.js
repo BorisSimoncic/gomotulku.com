@@ -76,7 +76,7 @@ var PageTransitions = (function ($, options) {
 
         var menu = options.menu,
         pageStart = getActiveSection();
-
+        console.log(pageStart);
         location.hash = pageStart;
         var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');
 
@@ -97,15 +97,19 @@ var PageTransitions = (function ($, options) {
                 }
             }
             else {
-                var activeItemLi = document.querySelector(".main-menu-mobile.mobile-only li.active");
-                if (activeItemLi === null) {
-                    document.querySelector('.main-menu-mobile.mobile-only li:nth-child(2) a').click();
-                } else if (activeItemLi.nextElementSibling === null) {
-                    document.querySelector('.main-menu-mobile.mobile-only li:first-child a').click();
-                }
-                else {
-                    activeItemLi.nextElementSibling.querySelector('a').click();
-                }
+                var currentHref = getActiveSection();
+                //console.log("CurrentHref: " + currentHref);
+                var nextHref = "";
+                if (currentHref === "#home") nextHref = "#about-me";
+                else if (currentHref === "#about-me") nextHref = "#resume";
+                else if (currentHref === "#resume") nextHref = "#portfolio";
+                else if (currentHref === "#portfolio") nextHref = "#contact";
+                else if (currentHref === "#contact") nextHref = "#home";
+                else nextHref = "#home";
+                //console.log("NextHref: " + nextHref);
+                const ul = document.querySelector(".main-menu-mobile.mobile-only");
+                const a = ul.querySelector(`a[href="${nextHref}"]`);
+                a.click();
             }
         });
 
@@ -119,12 +123,19 @@ var PageTransitions = (function ($, options) {
                 }
             }
             else {
-                var activeItemLi = document.querySelector(".main-menu-mobile.mobile-only li.active");
-                if (activeItemLi === null || activeItemLi.previousElementSibling === null) {
-                    document.querySelector('.main-menu-mobile.mobile-only li:last-child a').click();
-                } else {
-                    activeItemLi.previousElementSibling.querySelector('a').click();
-                }
+                var currentHref = getActiveSection();
+                //console.log("CurrentHref: " + currentHref);
+                var prevHref = "";
+                if (currentHref === "#home") prevHref = "#contact";
+                else if (currentHref === "#about-me") prevHref = "#home";
+                else if (currentHref === "#resume") prevHref = "#about-me";
+                else if (currentHref === "#portfolio") prevHref = "#resume";
+                else if (currentHref === "#contact") prevHref = "#portfolio";
+                else prevHref = "#home";
+                //console.log("prevHref: " + prevHref);
+                const ul = document.querySelector(".main-menu-mobile.mobile-only");
+                const a = ul.querySelector(`a[href="${prevHref}"]`);
+                a.click();
             }
         });
     }
