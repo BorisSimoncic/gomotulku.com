@@ -268,8 +268,8 @@ input[type="submit"]:focus {
 }
 
 .preloader-spinner {
-  width: 52px;
-  height: 52px;
+  width: 72px;
+  height: 72px;
   margin: 100px auto;
 
   background-image: url('../favicon-228x228.png'); /* Replace with the correct path to your image */
