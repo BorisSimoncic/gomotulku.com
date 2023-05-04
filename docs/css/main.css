@@ -1748,6 +1748,10 @@ textarea.form-control, textarea.form-control:focus {
 .portfolio-grid figure:hover .category {
   opacity: 1;
 }
+
+figure.item.standard {
+  padding: 0px 0px 15px 0px;
+}
 /* --- End of Portfolio --- */
 
 /* --- Blog --- */
