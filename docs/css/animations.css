@@ -598,50 +598,50 @@
 .animated-section-rotateCubeLeftOut {
 	-webkit-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
-	-webkit-animation: rotateCubeLeftOut 1.5s both ease-in;
-	animation: rotateCubeLeftOut 1.5s both ease-in;
+	-webkit-animation: rotateCubeLeftOut 0.8s both ease-in;
+	animation: rotateCubeLeftOut 0.8s both ease-in;
 }
 .animated-section-rotateCubeLeftIn {
 	-webkit-transform-origin: 0% 50%;
 	transform-origin: 0% 50%;
-	-webkit-animation: rotateCubeLeftIn 1.5s both ease-in;
-	animation: rotateCubeLeftIn 1.51s both ease-in;
+	-webkit-animation: rotateCubeLeftIn 0.8s both ease-in;
+	animation: rotateCubeLeftIn 0.81s both ease-in;
 }
 .animated-section-rotateCubeRightOut {
 	-webkit-transform-origin: 0% 50%;
 	transform-origin: 0% 50%;
-	-webkit-animation: rotateCubeRightOut 1.5s both ease-in;
-	animation: rotateCubeRightOut 1.5s both ease-in;
+	-webkit-animation: rotateCubeRightOut 0.8s both ease-in;
+	animation: rotateCubeRightOut 0.8s both ease-in;
 }
 .animated-section-rotateCubeRightIn {
 	-webkit-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
-	-webkit-animation: rotateCubeRightIn 1.5s both ease-in;
-	animation: rotateCubeRightIn 1.5s both ease-in;
+	-webkit-animation: rotateCubeRightIn 0.8s both ease-in;
+	animation: rotateCubeRightIn 0.8s both ease-in;
 }
 .animated-section-rotateCubeTopOut {
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
-	-webkit-animation: rotateCubeTopOut 1.5s both ease-in;
-	animation: rotateCubeTopOut 1.5s both ease-in;
+	-webkit-animation: rotateCubeTopOut 0.8s both ease-in;
+	animation: rotateCubeTopOut 0.8s both ease-in;
 }
 .animated-section-rotateCubeTopIn {
 	-webkit-transform-origin: 50% 0%;
 	transform-origin: 50% 0%;
-	-webkit-animation: rotateCubeTopIn 1.5s both ease-in;
-	animation: rotateCubeTopIn 1.5s both ease-in;
+	-webkit-animation: rotateCubeTopIn 0.8s both ease-in;
+	animation: rotateCubeTopIn 0.8s both ease-in;
 }
 .animated-section-rotateCubeBottomOut {
 	-webkit-transform-origin: 50% 0%;
 	transform-origin: 50% 0%;
-	-webkit-animation: rotateCubeBottomOut 1.5s both ease-in;
-	animation: rotateCubeBottomOut 1.5s both ease-in;
+	-webkit-animation: rotateCubeBottomOut 0.8s both ease-in;
+	animation: rotateCubeBottomOut 0.8s both ease-in;
 }
 .animated-section-rotateCubeBottomIn {
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
-	-webkit-animation: rotateCubeBottomIn 1.5s both ease-in;
-	animation: rotateCubeBottomIn 1.5s both ease-in;
+	-webkit-animation: rotateCubeBottomIn 0.8s both ease-in;
+	animation: rotateCubeBottomIn 0.8s both ease-in;
 }
 
 /* carousel */

@@ -40,7 +40,7 @@
         $('.menu-toggle').removeClass('open');
         setTimeout(function(){
             siteHeader.addClass('animate');
-        }, 500);
+        }, 100);
 
         /*if (windowWidth < 1025) {
             siteHeader.addClass('mobile-menu-hide');
@@ -142,7 +142,7 @@
 
             setTimeout(function() {
                 elements.removeClass('transition');
-            }, 300);
+            }, 200);
         })
 
         // Mobile menu

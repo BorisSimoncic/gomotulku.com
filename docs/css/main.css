@@ -2752,7 +2752,7 @@ blockquote {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 .modal-display {
