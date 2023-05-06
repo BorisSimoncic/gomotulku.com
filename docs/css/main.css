@@ -1315,6 +1315,7 @@ textarea.form-control, textarea.form-control:focus {
 .timeline-second-style .item-title-ul {
   font-size: 16px;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .timeline-second-style .item-period {
@@ -1489,7 +1490,6 @@ textarea.form-control, textarea.form-control:focus {
   flex-shrink: 0;
   position: relative;
   width: 30%; /* Adjust this value based on the desired width of the image */
-  height: 120px; /* Set the height of the parent container */
   overflow: hidden;
 }
 

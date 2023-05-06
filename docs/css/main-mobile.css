@@ -3,7 +3,7 @@
 ------------------------------------------------------------ */
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .welcome-desktop {
     display: none;
   }
@@ -189,6 +189,10 @@ x.
 
   .service-item {
     flex-direction: column;
+  }
+
+  .service-logo {
+    height: 120px; /* Set the height of the parent container */
   }
 
   .portfolio-grid figure .name {
