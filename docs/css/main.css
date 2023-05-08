@@ -233,6 +233,10 @@ input[type="submit"]:focus {
   display: block;
 }
 
+.tablet-only {
+  display: none;
+}
+
 .mobile-only {
   display: none;
 }
@@ -2761,7 +2765,7 @@ blockquote {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .modal-display {
@@ -2806,8 +2810,8 @@ blockquote {
 }
 
 .close-message {
-  margin-top: -258px;
-  margin-right: -15px;
+  margin-top: -252px;
+  margin-right: -5px;
 }
 
 .close:hover,
@@ -2817,15 +2821,51 @@ blockquote {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .modal-content {
     width: 80%;
-    min-width: 1000px;
-    max-width: 1000px;
-    background-image: url('../img/subscribe.png'); /* Replace with the correct path to your image */
+    min-width: 700px;
+    max-width: 700px;
+    background-image: url('../img/subscribe_tablet.png'); /* Replace with the correct path to your image */
     background-size: contain ; /* This will scale the image to cover the entire element */
     background-position: center; /* This will center the image within the element */
     background-repeat: no-repeat; /* This will prevent the image from repeating */
+    padding-top: 50px;
+
+  }
+
+  .modal-content-message {
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 300px;
+    background-image: url('../img/subscribe_top.png'); /* Replace with the correct path to your image */
+    background-size: 500px ; /* This will scale the image to cover the entire element */
+    background-position-x: center; /* This will center the image within the element */
+    background-position-y: top; /* This will center the image within the element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    padding-top: 270px;
+  }
+
+  .close {
+    margin-right: 32px;
+    margin-top: -17px;
+  }
+
+  .close-message {
+    margin-top: -258px;
+    margin-right: -15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-content {
+    min-width: 1000px;
+    max-width: 1000px;
+    background-image: url('../img/subscribe_desktop.png'); /* Replace with the correct path to your image */
+    background-size: contain ; /* This will scale the image to cover the entire element */
+    background-position: center; /* This will center the image within the element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    border-radius: 50px;
   }
 
   .modal-content-message {

@@ -3,7 +3,7 @@
 ------------------------------------------------------------ */
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .welcome-desktop {
     display: none;
   }
@@ -16,6 +16,35 @@
   }
 
   .mobile-only {
+    display: block;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  h3 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .welcome-desktop {
+    display: none;
+  }
+  .welcome-mobile {
+    display: inline;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
     display: block;
   }
 
@@ -494,7 +523,7 @@ x.
     background-color: #f3f8ff;
     border-radius: 20px;
     padding: 20px;
-    background-image: url('../img/subscribe_small.png'); /* Replace with the correct path to your image */
+    background-image: url('../img/subscribe_mobile.png'); /* Replace with the correct path to your image */
     background-size: 100% ; /* This will scale the image to cover the entire element */
     background-position-x: center; /* This will center the image within the element */
     background-position-y: top; /* This will center the image within the element */
