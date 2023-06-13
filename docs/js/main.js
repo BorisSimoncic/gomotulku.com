@@ -194,6 +194,13 @@
             }
         });
 
+        $(".text-rotation-testimonials").on('changed.owl.carousel', function(event) {
+            readMoreBtns.forEach((btn, index) => {
+                textElems[index].classList.remove('text-expanded');
+                btn.textContent = 'More';
+            });
+        });
+
         $('.text-rotation-funfacts').owlCarousel({
             loop: true,
             dots: false,
