@@ -58,7 +58,21 @@
                     <!-- /Technology -->
 
                     <script>
-                        document.querySelector('#share_link_consultancy').addEventListener('click', copyToClipboard);
+                        function displayPopup() {
+
+                            const url = window.location.href;
+                            navigator.clipboard.writeText(url)
+                            const modalLink = document.getElementById('modalLinkCopied');
+                            modalLink.classList.add('modal-display');
+                            modalLink.classList.add('modal-visible');
+                            setTimeout(() => {
+                                modalLink.classList.remove('modal-display');
+                                modalLink.classList.remove('modal-visible');
+
+                            }, 3000);
+                        }
+
+                        document.querySelector('#share_link_consultancy').addEventListener('click', displayPopup);
                     </script>
 
                     <!-- Share Buttons -->
@@ -89,5 +103,8 @@
                 });
             </script>
         </div>
+    </div>
+    <div class="modal-link" id="modalLinkCopied">
+        <p style="padding-top: 9px; color:#131e2f">The link has been copied to clipboard.</p>
     </div>
 </div>

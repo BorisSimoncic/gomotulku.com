@@ -2769,6 +2769,22 @@ blockquote {
   transition: opacity 0.5s ease-in-out;
 }
 
+.modal-link {
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 90%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  background-color: #fff;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+}
+
 .modal-display {
   display: block;
 }

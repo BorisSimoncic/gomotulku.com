@@ -49,7 +49,21 @@
                     <!-- /Technology -->
 
                     <script>
-                        document.querySelector('#share_link_mentorship').addEventListener('click', copyToClipboard);
+                        function displayPopup() {
+
+                            const url = window.location.href;
+                            navigator.clipboard.writeText(url)
+                            const modalLink = document.getElementById('modalLinkCopied');
+                            modalLink.classList.add('modal-display');
+                            modalLink.classList.add('modal-visible');
+                            setTimeout(() => {
+                                modalLink.classList.remove('modal-display');
+                                modalLink.classList.remove('modal-visible');
+
+                            }, 3000);
+                        }
+
+                        document.querySelector('#share_link_mentorship').addEventListener('click', displayPopup);
                     </script>
 
                     <!-- Share Buttons -->
@@ -72,5 +86,8 @@
                 <iframe src="https://tidycal.com/m5vr2x3/request-for-an-orientation-call?embed&amp;showAvatar=true" id="tidycal-embed-1k1ax-mobile" class="tidycal-embed" scrolling="no" style="border: none; width: 1px; min-width: 100%; min-height: 1100px; height: 110%; overflow:hidden;"></iframe>
             </div>
         </div>
+    </div>
+    <div class="modal-link" id="modalLinkCopied">
+        <p style="padding-top: 9px; color:#131e2f">The link has been copied to clipboard.</p>
     </div>
 </div>
