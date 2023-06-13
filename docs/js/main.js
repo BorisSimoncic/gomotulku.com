@@ -170,7 +170,7 @@
             nav: false,
             margin: 0,
             autoplay: true,
-            autoplayHoverPause: true,
+            autoplayHoverPause: false,
             autoplayTimeout: 8000,
             animateOut: 'animated-section-scaleDown',
             animateIn: 'animated-section-scaleUp',
@@ -198,6 +198,7 @@
             readMoreBtns.forEach((btn, index) => {
                 textElems[index].classList.remove('text-expanded');
                 btn.textContent = 'More';
+                $(".text-rotation-testimonials").trigger('play.owl.autoplay');
             });
         });
 
@@ -396,6 +397,14 @@
                 textElems[index].classList.toggle('text-expanded');
                 // update the text of the read more button based on whether the text is expanded or not
                 btn.textContent = textElems[index].classList.contains('text-expanded') ? 'Less' : 'More';
+                if (textElems[index].classList.contains('text-expanded')) {
+                    $(".text-rotation-testimonials").trigger('stop.owl.autoplay');
+                    console.log('autoplay stopped');
+                }
+                else {
+                    $(".text-rotation-testimonials").trigger('play.owl.autoplay');
+                    console.log('autoplay resumed');
+                }
             });
         });
 
