@@ -971,6 +971,10 @@ textarea.form-control, textarea.form-control:focus {
   padding-bottom: 50px;
 }
 
+.white-space-40-30 {
+  padding-bottom: 40px;
+}
+
 .white-space-50-30 {
   padding-bottom: 50px;
 }
