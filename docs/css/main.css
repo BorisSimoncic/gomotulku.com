@@ -67,16 +67,16 @@ h2 {
     font-size: 27px;
 }
 h3 {
-    font-size: 21px;
+    font-size: 23px;
 }
 h4 {
-    font-size: 18px;
+    font-size: 20px;
 }
 h5 {
-    font-size: 16px;
+    font-size: 18px;
 }
 h6 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 a {
@@ -536,7 +536,7 @@ input[type="submit"]:focus {
   left: 0;
   padding: 5px 10px 15px;
   line-height: 14px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -551,7 +551,7 @@ input[type="submit"]:focus {
 
 .header .privacy a {
   color: #bbb;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -1142,7 +1142,7 @@ textarea.form-control, textarea.form-control:focus {
 
 .testimonial .author-info .company {
   color: #a5a6a7;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 300;
   margin: 0;
 }
@@ -1316,12 +1316,12 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .timeline-second-style .item-title {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 3px;
 }
 
 .timeline-second-style .item-title-ul {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 8px;
   text-align: left;
 }
@@ -1329,7 +1329,7 @@ textarea.form-control, textarea.form-control:focus {
 .timeline-second-style .item-period {
   color: #aaa;
   margin: 3px 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4em;
 }
 
